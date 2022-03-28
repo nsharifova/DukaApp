@@ -4,7 +4,6 @@ using DataAccess;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -12,10 +11,9 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataAccess.Migrations
 {
     [DbContext(typeof(AgencyContext))]
-    [Migration("20220301163127_AddSeed")]
-    partial class AddSeed
+    partial class AgencyContextModelSnapshot : ModelSnapshot
     {
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -468,9 +466,9 @@ namespace DataAccess.Migrations
                             IsDay = false,
                             IsDeleted = false,
                             IsFeatured = true,
-                            ModifiedOn = new DateTime(2022, 3, 1, 20, 31, 26, 322, DateTimeKind.Local).AddTicks(8766),
+                            ModifiedOn = new DateTime(2022, 3, 17, 18, 40, 27, 223, DateTimeKind.Local).AddTicks(9976),
                             Price = 200m,
-                            PublishDate = new DateTime(2022, 3, 1, 20, 31, 26, 322, DateTimeKind.Local).AddTicks(8754),
+                            PublishDate = new DateTime(2022, 3, 17, 18, 40, 27, 223, DateTimeKind.Local).AddTicks(9963),
                             Rating = 4.5m,
                             isSlider = true
                         });

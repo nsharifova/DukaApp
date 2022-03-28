@@ -19,7 +19,7 @@ namespace Web.Controllers
         {
             var cookieData = Request.Cookies["myCookie"];
            
-            if (cookieData != null)
+            if (cookieData != null && cookieData !="")
             {
 
                 List<int> productIds = cookieData.Split("-").Select(x => int.Parse(x)).ToList();
